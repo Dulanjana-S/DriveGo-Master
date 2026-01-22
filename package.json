@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bcryptjs": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^25.0.5",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "seed": "npm --prefix backend run seed",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build"
+  }
+}
